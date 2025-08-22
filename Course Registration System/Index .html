@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>University Course Registration</h1>
+
+    <!-- Registration Form -->
+    <form id="registrationForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required><br><br>
+
+        <label for="studentEmail">Email:</label>
+        <input type="email" id="studentEmail" name="studentEmail" required><br><br>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+            <option value="">--Choose a Course--</option>
+            <option value="cse101">CSE101 - Intro to Programming</option>
+            <option value="cse201">CSE201 - Data Structures</option>
+            <option value="cse301">CSE301 - Algorithms</option>
+        </select><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <hr>
+
+    <!-- Course Availability Section -->
+    <h2>Available Courses</h2>
+    <ul id="courseList">
+        <li>CSE101 - Intro to Programming (Seats Left: <span id="cse101">3</span>)</li>
+        <li>CSE201 - Data Structures (Seats Left: <span id="cse201">2</span>)</li>
+        <li>CSE301 - Algorithms (Seats Left: <span id="cse301">1</span>)</li>
+    </ul>
+
+    <h2>Registered Students</h2>
+    <ul id="studentList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
